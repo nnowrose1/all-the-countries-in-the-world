@@ -29,15 +29,21 @@ const Countries = ({countriesPromise}) => {
     return (
         <div>
                 <h3>Total Countries Visited: {visitedCountries.length}</h3>
+          
+  <div className='flex gap-4'>
+    <ol>
+             {
              
-                    <ol>
-             {visitedCountries.map(visitedCountry =><li>{visitedCountry}</li>)} 
-               {
-            visitedCountriesFlag.map(flag => <img className='w-[100px] mt-2' src={flag}></img>)
+             visitedCountries.map(visitedCountry => <li>{visitedCountry}</li>) }
+             </ol>
+       <div>
+        {       
+            visitedCountriesFlag.map(flag => <img className='w-[100px] h-[40px] mt-2' src={flag}></img>)
         }
-        </ol>
-           
+        </div> 
     
+</div>
+
         {/* <h3>Visited Countries Flag: {visitedCountriesFlag.length}</h3> */}
         {/* <div>
         {
