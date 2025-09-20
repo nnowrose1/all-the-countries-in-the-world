@@ -1,0 +1,10 @@
+.country{
+    border: 1px solid salmon;
+    border-radius: 10px;
+    margin: 12px;
+    padding: 12px;
+}
+.country-name{
+    font-size: large;
+    font-weight: 800;
+}
